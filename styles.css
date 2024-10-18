@@ -1,0 +1,199 @@
+/* General styles */
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.light-grey {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.text-light-grey {
+    color: #f1f1f1;
+}
+
+.text-grey {
+    color: #757575;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.padding-16 {
+    padding: 16px;
+}
+
+.padding-32 {
+    padding: 32px;
+}
+
+.padding-64 {
+    padding: 64px;
+}
+
+.margin-right {
+    margin-right: 16px;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+/* Navbar styles */
+.bar-block {
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.hide-small {
+    display: none;
+}
+
+.hover-black:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.hover-opacity-off:hover {
+    opacity: 1;
+}
+
+.xlarge {
+    font-size: 24px;
+}
+
+.xxlarge {
+    font-size: 48px;
+}
+
+.jumbo {
+    font-size: 64px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.hide-large {
+    display: none;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Header styles */
+.header {
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    padding: 64px;
+}
+
+.section {
+    margin-bottom: 16px;
+}
+
+.wide {
+    letter-spacing: 4px;
+}
+
+/* Grid styles */
+.row-padding {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half {
+    flex: 50%;
+}
+
+.quarter {
+    flex: 25%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Testimonials styles */
+.circle {
+    border-radius: 50%;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+/* Footer styles */
+.footer {
+    padding: 64px;
+    text-align: center;
+}
+/* Video container to make iframe and video tags responsive */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: black;
+  }
+  
+  .video-container iframe, .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

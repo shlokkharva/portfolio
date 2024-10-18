@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* Grid container for the gallery */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 20px; /* Space between items */
+            justify-items: center;
+            padding: 20px;
+        }
+
+        /* General styling for all images and videos */
+        .gallery-container img, .gallery-container video {
+            width: 100%; /* Full width of the grid item */
+            height: 400px; /* Fixed height to create portrait orientation */
+            object-fit: cover; /* Maintain aspect ratio by cropping */
+            border-radius: 5px;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr); /* Two items per row for medium screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body class="black">
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center" id="mySidebar">
+  <img src="images/aex.jpg" alt="Avatar" style="width:100%; max-width:200px;">
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large hover-black">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="bar-item button padding-large hover-black">
+    <i class="fa fa-eye xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large hover-black">
+    <i class="fa fa-envelope xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens -->
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+<!-- Page Content -->
+<div class="padding-large" id="main">
+<!-- Header/Home -->
+<header class="container padding-32 center black" id="home">
+  <h1 class="jumbo"><span class="hide-small">I'm</span> Italiya Ashish.</h1>
+  <p>Photographer and Cinematographer.</p>
+  <img src="images/aex.jpg" alt="boy" class="image" style="display: block; margin: auto; width: 100%; height: auto; max-width:fit-content;">
+</header>
+<!-- About Section -->
+<div class="content justify text-grey padding-64" id="about">
+  <h2 class="text-light-grey">Italiya Ashish.</h2>
+  <hr style="width:200px" class="opacity">
+  <p>I am a passionate Cinematographer and Photographer with a keen eye for capturing life's most profound moments. With years of experience behind the lens, I have mastered the art of storytelling through visuals, blending creativity with technical precision.
+
+    From breathtaking landscapes to intimate portraits, I strive to evoke emotion and craft stories that resonate. My work spans a variety of styles, including documentary filmmaking, commercial projects, event photography, and creative shoots.
+    
+    With a deep love for visual arts, I’m always exploring new techniques and pushing the boundaries to create compelling and unique compositions that leave a lasting impression.</p>
+  <h3 class="padding-16 text-light-grey">My Skills</h3>
+  <p class="wide">Photography</p>
+  <div class="white">
+    <div class="dark-grey" style="height:28px;width:95%"></div>
+  </div>
+  <p class="wide">Cinematography</p>
+  <div class="white">
+    <div class="dark-grey" style="height:28px;width:85%"></div>
+  </div>
+  <p class="wide">Photoshop</p>
+  <div class="white">
+    <div class="dark-grey" style="height:28px;width:80%"></div>
+  </div><br>
+  <p class="wide">Video Editing</p>
+  <div class="white">
+    <div class="dark-grey" style="height:28px;width:80%"></div>
+</div>
+
+<!-- Portfolio Section -->
+<div class="padding-64 content" id="photos">
+  <h2 class="text-light-grey">My Works</h2>
+  <hr style="width:200px" class="opacity">
+
+  <!-- Photo and Video Grid -->
+  <div class="gallery-container">
+    <!-- Row 1 -->
+    <img src="images/5.jpg" alt="Wedding Photo">
+    <video autoplay muted loop>
+      <source src="videos/v1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="images/4.jpg" alt="Rocks Photo">
+
+    <!-- Row 2 -->
+    <img src="images/3.jpg" alt="Sailboat Photo">
+    <video autoplay muted loop>
+      <source src="videos/v2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="images/1.jpg" alt="Street Photography">
+
+    <!-- Row 3 -->
+    <img src="images/2.jpg" alt="Nature Closeup">
+    <video autoplay muted loop>
+      <source src="videos/v3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="images/6.jpg" alt="Underwater Photo">
+  </div>
+  <!-- End of Photo and Video Grid -->
+</div>
+
+<!-- Contact Section -->
+<div class="padding-64 content text-grey" id="contact">
+  <h2 class="text-light-grey">Contact Me</h2>
+  <hr style="width:200px" class="opacity">
+
+  <div class="section">
+    <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Surat,GUJARAT</p>
+    <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: +916353450628</p>
+    <p>
+        <i class="fa fa-instagram fa-fw text-white xxlarge margin-right"></i>
+        <a href="https://www.instagram.com/aex.innn?igsh=MWppOHl5YzdrYzQ1Yw==" class="text-light-grey">Instagram</a>
+    </p>
+    <p>
+        <i class="fa fa-whatsapp fa-fw text-white xxlarge margin-right"></i>
+        <a href="https://wa.me/+916353450628" class="text-light-grey">WhatsApp</a>
+    </p>
+  </div><br>
+  <p>For more details Let's get in touch!</p>
+
+</div>
+
+<!-- Footer -->
+<footer class="container padding-64 center opacity light-grey xlarge">
+  <i class="fa fa-facebook-official hover-opacity"></i>
+  <i class="fa fa-instagram hover-opacity"></i>
+  <i class="fa fa-snapchat hover-opacity"></i>
+  <i class="fa fa-pinterest-p hover-opacity"></i>
+  <i class="fa fa-twitter hover-opacity"></i>
+  <i class="fa fa-linkedin hover-opacity"></i>
+  <p class="medium center-text">THANK YOU!</p>
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function openSidebar() {
+document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
